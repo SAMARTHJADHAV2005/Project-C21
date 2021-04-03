@@ -8,16 +8,16 @@ function setup() {
 
  thickness = random(22,83);
 
- bullet.velocityX = speed ;
-
  speed = random(223,321);
  weight = random(30,52);
+  
+   bullet.velocityX = speed ;
 }
 
 function draw() {
   background("black");      
 
-if(wall.x - bullet.x < (car.width + wall.width)/2);
+if(wall.x - bullet.x < (car.width + wall.width)/2)
 {
   bullet.velocityX = 0;  
   var deformation = 0.5 * weight * speed* speed/22509 ;
