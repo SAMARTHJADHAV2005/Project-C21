@@ -17,7 +17,7 @@ function setup() {
 function draw() {
   background("black");      
 
-if(wall.x - bullet.x < (car.width + wall.width)/2)
+if(wall.x - bullet.x < (bullet.width + wall.width)/2)
 {
   bullet.velocityX = 0;  
   var deformation = 0.5 * weight * speed* speed/22509 ;
