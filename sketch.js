@@ -31,7 +31,7 @@ if(wall.x - bullet.x < (bullet.width + wall.width)/2)
   }
   if(deformation<100)
   {
-    car.shapeColour = "white";
+    bullet.shapeColour = "white";
   }
 }
 
